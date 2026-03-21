@@ -100,13 +100,12 @@ function CategoryCard({ cat, index, inView, className }: { cat: Category; index:
       onMouseEnter={() => setTooltip(true)}
       onMouseLeave={() => setTooltip(false)}
     >
-      {/* Tooltip */}
-      {tooltip && (
-        <div className="absolute -top-9 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-lg text-xs text-white whitespace-nowrap z-10 pointer-events-none"
-          style={{ background: "rgba(10,10,10,0.98)", border: "1px solid rgba(168,85,247,0.2)" }}>
-          {cat.tooltip}
-        </div>
-      )}
+          {tooltip && (
+            <div className="absolute -top-9 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-lg text-xs text-white whitespace-nowrap z-10 pointer-events-none"
+              style={{ background: "rgba(10,10,10,0.98)", border: "1px solid rgba(168,85,247,0.2)" }}>
+              {cat.tooltip}
+            </div>
+          )}
 
       <div className="flex items-center gap-2 mb-4">
         <div className="w-8 h-8 rounded-lg flex items-center justify-center"

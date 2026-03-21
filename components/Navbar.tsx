@@ -69,7 +69,7 @@ export default function Navbar() {
               <button
                 key={link.href}
                 onClick={() => scrollTo(link.href)}
-                className="relative px-3 py-2 text-sm text-slate-400 hover:text-white transition-colors"
+                className="relative px-3 py-2 text-sm hover:text-white transition-colors" style={{ color: "#9d8faa" }}
               >
                 {link.label}
                 {active === link.href.slice(1) && (
@@ -94,7 +94,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-slate-400 hover:text-white transition-colors"
+            className="md:hidden hover:text-white transition-colors" style={{ color: "#9d8faa" }}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -131,8 +131,9 @@ export default function Navbar() {
                   className={`text-left px-4 py-3 rounded-lg text-sm transition-colors ${
                     active === link.href.slice(1)
                       ? "text-[#a855f7] bg-[#a855f7]/10"
-                      : "text-slate-400 hover:text-white hover:bg-white/5"
+                      : "hover:text-white hover:bg-white/5"
                   }`}
+                  style={{ color: active === link.href.slice(1) ? undefined : "#9d8faa" }}
                 >
                   {link.label}
                 </button>

@@ -69,7 +69,7 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white">Get In <span className="color-cycle">Touch</span></h2>
-          <p className="text-slate-400 mt-3 text-sm max-w-md mx-auto">
+          <p className="mt-3 text-sm max-w-md mx-auto" style={{ color: "#9d8faa" }}>
             Have an opportunity or just want to say hi? My inbox is always open.
           </p>
         </motion.div>
@@ -93,10 +93,10 @@ export default function Contact() {
                   <CheckCircle size={32} style={{ color: "#a855f7" }} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-1">
+                <p className="text-sm leading-relaxed mb-1" style={{ color: "#9d8faa" }}>
                   Thanks for reaching out, <span style={{ color: "#c084fc" }}>{form.name || "there"}</span>!
                 </p>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                <p className="text-sm leading-relaxed mb-6" style={{ color: "#6b5f75" }}>
                   I'll get back to you within 24 hours. Check your inbox — I've sent you a confirmation with my CV attached.
                 </p>
                 <motion.button
@@ -116,7 +116,7 @@ export default function Contact() {
                 { id: "email", label: "Email", type: "email", placeholder: "your@email.com" },
               ].map((field) => (
                 <div key={field.id}>
-                  <label htmlFor={field.id} className="block text-xs font-medium text-slate-400 mb-1.5">
+                  <label htmlFor={field.id} className="block text-xs font-medium mb-1.5" style={{ color: "#9d8faa" }}>
                     {field.label}
                   </label>
                   <input
@@ -138,7 +138,7 @@ export default function Contact() {
               ))}
 
               <div>
-                <label htmlFor="message" className="block text-xs font-medium text-slate-400 mb-1.5">
+                <label htmlFor="message" className="block text-xs font-medium mb-1.5" style={{ color: "#9d8faa" }}>
                   Message
                 </label>
                 <textarea
@@ -218,8 +218,8 @@ export default function Contact() {
                   {link.icon}
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500">{link.label}</p>
-                  <p className="text-sm text-slate-300 group-hover:text-white transition-colors">{link.value}</p>
+                  <p className="text-xs" style={{ color: "#6b5f75" }}>{link.label}</p>
+                  <p className="text-sm transition-colors group-hover:text-white" style={{ color: "#c4b5d4" }}>{link.value}</p>
                 </div>
               </motion.a>
             ))}
@@ -236,7 +236,7 @@ export default function Contact() {
                 <Zap size={16} style={{ color: "#a855f7" }} />
                 <span className="text-sm font-semibold text-white">Quick Response</span>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-xs leading-relaxed" style={{ color: "#9d8faa" }}>
                 I typically respond within 24 hours. For urgent inquiries, feel free to reach out
                 directly via email or LinkedIn.
               </p>

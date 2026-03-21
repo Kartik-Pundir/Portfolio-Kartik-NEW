@@ -59,7 +59,7 @@ export default function Certificates() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             <span className="color-cycle">Certificates</span>
           </h2>
-          <p className="text-slate-500 text-sm mt-2">Verified learning achievements</p>
+          <p className="text-sm mt-2" style={{ color: "#6b5f75" }}>Verified learning achievements</p>
         </motion.div>
 
         <div className="card-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -102,12 +102,12 @@ export default function Certificates() {
                 <p className="text-xs font-medium mb-0.5" style={{ color: cert.color }}>
                   {cert.issuer}
                 </p>
-                <p className="text-xs text-slate-500">{cert.platform}</p>
+                <p className="text-xs" style={{ color: "#6b5f75" }}>{cert.platform}</p>
               </div>
 
               {/* Footer */}
               <div className="flex items-center justify-between pt-3 border-t" style={{ borderColor: "rgba(168,85,247,0.08)" }}>
-                <span className="text-xs text-slate-600 font-mono">{cert.date}</span>
+                <span className="text-xs font-mono" style={{ color: "#4a4055" }}>{cert.date}</span>
                 {cert.link ? (
                   <a
                     href={cert.link}

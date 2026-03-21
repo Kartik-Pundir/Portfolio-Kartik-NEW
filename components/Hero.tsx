@@ -103,7 +103,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45 }}
-              className="text-slate-400 text-sm sm:text-base max-w-lg mb-8 leading-relaxed"
+              className="text-sm sm:text-base max-w-lg mb-8 leading-relaxed" style={{ color: "#9d8faa" }}
             >
               Passionate about building scalable full-stack web applications with React.js,
               Node.js, and modern technologies. Currently pursuing B.Tech at LPU.
@@ -158,7 +158,6 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, color: "#a855f7" }}
                   className="text-slate-500 hover:text-purple-400 transition-colors"
-                >
                   {s.icon}
                 </motion.a>
               ))}

@@ -52,7 +52,7 @@ export default function Projects() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-white"><span className="color-cycle">Projects</span></h2>
-          <p className="text-slate-500 text-sm mt-2">Things I&apos;ve built</p>
+          <p className="text-sm mt-2" style={{ color: "#6b5f75" }}>Things I&apos;ve built</p>
         </motion.div>
 
         <div className="projects-grid grid md:grid-cols-3 gap-6 mb-8">
@@ -112,7 +112,7 @@ export default function Projects() {
                   </a>
                 </div>
                 <p className="text-xs mb-3" style={{ color: "#a855f7" }}>{p.subtitle}</p>
-                <p className="text-xs text-slate-400 leading-relaxed mb-4 flex-1">{p.desc}</p>
+                <p className="text-xs leading-relaxed mb-4 flex-1" style={{ color: "#9d8faa" }}>{p.desc}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {p.tech.map((t) => (
                     <span key={t} className="skill-badge">{t}</span>
@@ -159,7 +159,7 @@ export default function Projects() {
                 style={{ background: "rgba(168,85,247,0.05)", border: "1px solid rgba(168,85,247,0.1)" }}
               >
                 <span style={{ color: "#a855f7" }} className="mt-0.5 flex-shrink-0">{a.icon}</span>
-                <p className="text-xs text-slate-300 leading-relaxed">{a.text}</p>
+                <p className="text-xs leading-relaxed" style={{ color: "#c4b5d4" }}>{a.text}</p>
               </motion.div>
             ))}
           </div>

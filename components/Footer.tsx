@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t py-8 px-4" style={{ borderColor: "rgba(168,85,247,0.08)" }}>
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-slate-500">
+        <p className="text-sm" style={{ color: "#6b5f75" }}>
           © {new Date().getFullYear()}{" "}
           <span className="font-mono" style={{ color: "#a855f7" }}>
             Kartik Pundir
@@ -26,8 +26,8 @@ export default function Footer() {
               target={link.href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="w-8 h-8 rounded-lg flex items-center justify-center text-slate-500 hover:text-primary transition-colors"
-              style={{ background: "rgba(255,255,255,0.04)" }}
+              className="w-8 h-8 rounded-lg flex items-center justify-center hover:text-primary transition-colors"
+              style={{ background: "rgba(255,255,255,0.04)", color: "#6b5f75" }}
             >
               {link.icon}
             </a>

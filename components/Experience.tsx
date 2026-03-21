@@ -116,14 +116,14 @@ export default function Experience() {
                         </div>
                         <div>
                           <h3 className="text-sm font-bold text-white">{item.title}</h3>
-                          <p className="text-xs text-slate-500">{item.org}</p>
+                          <p className="text-xs" style={{ color: "#6b5f75" }}>{item.org}</p>
                         </div>
                         <span className="ml-auto text-xs font-mono px-2 py-0.5 rounded-full flex-shrink-0"
                           style={{ background: "rgba(168,85,247,0.08)", color: "#a855f7" }}>
                           {item.period}
                         </span>
                       </div>
-                      <p className="text-xs text-slate-400 leading-relaxed mb-3">{item.desc}</p>
+                      <p className="text-xs leading-relaxed mb-3" style={{ color: "#9d8faa" }}>{item.desc}</p>
                       <div className="flex flex-wrap gap-1.5">
                         {item.tags.map((t) => (
                           <span key={t} className="skill-badge">{t}</span>
@@ -167,10 +167,10 @@ export default function Experience() {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-white">{item.title}</h3>
-                  <p className="text-xs text-slate-500">{item.org} · {item.period}</p>
+                  <p className="text-xs" style={{ color: "#6b5f75" }}>{item.org} · {item.period}</p>
                 </div>
               </div>
-              <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
+              <p className="text-sm leading-relaxed" style={{ color: "#9d8faa" }}>{item.desc}</p>
               <div className="flex flex-wrap gap-1.5">
                 {item.tags.map((t) => (
                   <span key={t} className="skill-badge">{t}</span>

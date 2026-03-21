@@ -53,7 +53,7 @@ export default function About() {
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="space-y-4 text-slate-400 leading-relaxed"
+            className="space-y-4 leading-relaxed" style={{ color: "#9d8faa" }}
           >
             <p>
               Hey, I&apos;m <span className="text-white font-semibold">Kartik Pundir</span> — a
@@ -115,7 +115,7 @@ export default function About() {
                   {h.icon}
                 </div>
                 <h3 className="text-sm font-semibold text-white">{h.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">{h.desc}</p>
+                <p className="text-xs leading-relaxed" style={{ color: "#6b5f75" }}>{h.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -155,7 +155,7 @@ export default function About() {
               ["Status", "Open to Internships"],
             ].map(([k, v]) => (
               <div key={k} className="glass-card rounded-lg p-3">
-                <p className="text-xs text-slate-500 mb-0.5">{k}</p>
+                <p className="text-xs mb-0.5" style={{ color: "#6b5f75" }}>{k}</p>
                 <p className="text-sm text-white font-medium">{v}</p>
               </div>
             ))}

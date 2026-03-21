@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="appbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a0d2e"/>
+    </linearGradient>
+    <linearGradient id="sidebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#0f0f1e"/>
+    </linearGradient>
+    <linearGradient id="scorebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <linearGradient id="scorebar2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <linearGradient id="scorebar3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="800" height="500" rx="12" fill="#1a1a2e" stroke="#2d2d4e" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="40" rx="12" fill="#111122"/>
+  <rect y="28" width="800" height="12" fill="#111122"/>
+
+  <!-- Traffic lights -->
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="46" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="68" cy="20" r="7" fill="#28c840"/>
+
+  <!-- URL bar -->
+  <rect x="120" y="10" width="460" height="20" rx="10" fill="#0d0d1e" stroke="#2d2d4e" stroke-width="1"/>
+  <text x="350" y="24" text-anchor="middle" font-family="monospace" font-size="10" fill="#6366f1">nextgen-analyzer.app / dashboard</text>
+
+  <!-- App background -->
+  <rect x="0" y="40" width="800" height="460" fill="url(#appbg)"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="40" width="200" height="460" fill="url(#sidebar)" stroke="none"/>
+  <rect x="199" y="40" width="1" height="460" fill="rgba(168,85,247,0.15)"/>
+
+  <!-- Logo in sidebar -->
+  <text x="100" y="80" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="white">NextGen</text>
+  <text x="100" y="96" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(168,85,247,0.7)">Code Analyzer</text>
+
+  <!-- Sidebar nav items -->
+  <rect x="12" y="110" width="176" height="32" rx="8" fill="rgba(168,85,247,0.2)" stroke="rgba(168,85,247,0.4)" stroke-width="1"/>
+  <text x="100" y="131" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#c084fc">⚡ Dashboard</text>
+
+  <rect x="12" y="150" width="176" height="32" rx="8" fill="transparent"/>
+  <text x="100" y="171" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(148,163,184,0.6)">📂 Projects</text>
+
+  <rect x="12" y="190" width="176" height="32" rx="8" fill="transparent"/>
+  <text x="100" y="211" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(148,163,184,0.6)">🔍 Analyze</text>
+
+  <rect x="12" y="230" width="176" height="32" rx="8" fill="transparent"/>
+  <text x="100" y="251" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(148,163,184,0.6)">📊 Reports</text>
+
+  <rect x="12" y="270" width="176" height="32" rx="8" fill="transparent"/>
+  <text x="100" y="291" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(148,163,184,0.6)">🤖 AI Suggest</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="320" x2="180" y2="320" stroke="rgba(168,85,247,0.1)" stroke-width="1"/>
+
+  <!-- Recent files -->
+  <text x="20" y="340" font-family="sans-serif" font-size="10" fill="rgba(168,85,247,0.5)">RECENT FILES</text>
+  <text x="20" y="360" font-family="monospace" font-size="10" fill="rgba(148,163,184,0.6)">📄 analyzer.js</text>
+  <text x="20" y="378" font-family="monospace" font-size="10" fill="rgba(148,163,184,0.6)">📄 engine.ts</text>
+  <text x="20" y="396" font-family="monospace" font-size="10" fill="rgba(148,163,184,0.6)">📄 routes.js</text>
+
+  <!-- Main content area -->
+  <!-- Header -->
+  <text x="225" y="72" font-family="sans-serif" font-size="18" font-weight="bold" fill="white">Analysis Dashboard</text>
+  <text x="225" y="90" font-family="sans-serif" font-size="11" fill="rgba(148,163,184,0.6)">Real-time code quality insights</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1 -->
+  <rect x="220" y="100" width="130" height="70" rx="10" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+  <text x="285" y="128" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="white">82</text>
+  <text x="285" y="145" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(168,85,247,0.7)">Quality Score</text>
+  <text x="285" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#86efac">↑ +5 from last</text>
+
+  <!-- Card 2 -->
+  <rect x="362" y="100" width="130" height="70" rx="10" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+  <text x="427" y="128" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="white">247</text>
+  <text x="427" y="145" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(34,211,238,0.7)">Files Analyzed</text>
+  <text x="427" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#86efac">↑ +12 today</text>
+
+  <!-- Card 3 -->
+  <rect x="504" y="100" width="130" height="70" rx="10" fill="rgba(248,113,113,0.08)" stroke="rgba(248,113,113,0.2)" stroke-width="1"/>
+  <text x="569" y="128" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="white">18</text>
+  <text x="569" y="145" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(248,113,113,0.7)">Issues Found</text>
+  <text x="569" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#f87171">↓ -3 fixed</text>
+
+  <!-- Card 4 -->
+  <rect x="646" y="100" width="130" height="70" rx="10" fill="rgba(134,239,172,0.08)" stroke="rgba(134,239,172,0.2)" stroke-width="1"/>
+  <text x="711" y="128" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="white">94%</text>
+  <text x="711" y="145" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(134,239,172,0.7)">AI Accuracy</text>
+  <text x="711" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#86efac">↑ Improving</text>
+
+  <!-- Code panel -->
+  <rect x="220" y="185" width="340" height="220" rx="10" fill="rgba(0,0,0,0.5)" stroke="rgba(168,85,247,0.15)" stroke-width="1"/>
+  <rect x="220" y="185" width="340" height="30" rx="10" fill="rgba(168,85,247,0.08)"/>
+  <rect x="220" y="200" width="340" height="15" fill="rgba(168,85,247,0.08)"/>
+  <text x="240" y="205" font-family="monospace" font-size="11" fill="rgba(168,85,247,0.7)">analyzer.js</text>
+  <circle cx="530" cy="200" r="5" fill="#ff5f57"/>
+  <circle cx="545" cy="200" r="5" fill="#febc2e"/>
+  <circle cx="560" cy="200" r="5" fill="#28c840"/>
+
+  <!-- Code lines -->
+  <g font-family="monospace" font-size="10.5">
+    <text x="235" y="232" fill="rgba(99,102,241,0.9)">import</text>
+    <text x="278" y="232" fill="#e2e8f0"> { analyzeAST } from </text>
+    <text x="420" y="232" fill="#86efac">'./engine'</text>
+
+    <text x="235" y="250" fill="rgba(99,102,241,0.9)">const</text>
+    <text x="268" y="250" fill="#7dd3fc"> result </text>
+    <text x="308" y="250" fill="#e2e8f0">= </text>
+    <text x="320" y="250" fill="#fbbf24">await </text>
+    <text x="355" y="250" fill="#e2e8f0">analyzeAST(src)</text>
+
+    <text x="235" y="268" fill="rgba(100,100,120,0.7)">// detect issues in real-time</text>
+
+    <text x="235" y="286" fill="rgba(99,102,241,0.9)">if </text>
+    <text x="252" y="286" fill="#e2e8f0">(result.issues.length </text>
+    <text x="390" y="286" fill="#f87171">&gt; 0</text>
+    <text x="410" y="286" fill="#e2e8f0">) {'{'}</text>
+
+    <text x="255" y="304" fill="#7dd3fc">  fixes</text>
+    <text x="285" y="304" fill="#e2e8f0">.push(...result.suggestions)</text>
+
+    <text x="235" y="322" fill="#e2e8f0">{'}'}</text>
+
+    <text x="235" y="340" fill="rgba(99,102,241,0.9)">return</text>
+    <text x="275" y="340" fill="#e2e8f0"> {'{'} result, fixes {'}'}</text>
+
+    <!-- Error highlight line -->
+    <rect x="228" y="275" width="320" height="16" rx="3" fill="rgba(248,113,113,0.08)" stroke="rgba(248,113,113,0.2)" stroke-width="1"/>
+  </g>
+
+  <!-- Issues panel -->
+  <rect x="572" y="185" width="204" height="220" rx="10" fill="rgba(0,0,0,0.5)" stroke="rgba(168,85,247,0.15)" stroke-width="1"/>
+  <rect x="572" y="185" width="204" height="30" rx="10" fill="rgba(168,85,247,0.08)"/>
+  <rect x="572" y="200" width="204" height="15" fill="rgba(168,85,247,0.08)"/>
+  <text x="590" y="205" font-family="sans-serif" font-size="11" fill="rgba(168,85,247,0.7)">Issues</text>
+
+  <g font-family="sans-serif" font-size="10">
+    <rect x="582" y="222" width="184" height="28" rx="6" fill="rgba(248,113,113,0.08)" stroke="rgba(248,113,113,0.2)" stroke-width="1"/>
+    <text x="596" y="234" fill="#f87171">✗ ERROR</text>
+    <text x="596" y="246" fill="rgba(148,163,184,0.7)">Unused var at line 12</text>
+
+    <rect x="582" y="256" width="184" height="28" rx="6" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+    <text x="596" y="268" fill="#fbbf24">⚠ WARN</text>
+    <text x="596" y="280" fill="rgba(148,163,184,0.7)">Missing await line 34</text>
+
+    <rect x="582" y="290" width="184" height="28" rx="6" fill="rgba(134,239,172,0.08)" stroke="rgba(134,239,172,0.2)" stroke-width="1"/>
+    <text x="596" y="302" fill="#86efac">✓ FIXED</text>
+    <text x="596" y="314" fill="rgba(148,163,184,0.7)">Loop O(n²) → O(n)</text>
+
+    <rect x="582" y="324" width="184" height="28" rx="6" fill="rgba(134,239,172,0.08)" stroke="rgba(134,239,172,0.2)" stroke-width="1"/>
+    <text x="596" y="336" fill="#86efac">✓ FIXED</text>
+    <text x="596" y="348" fill="rgba(148,163,184,0.7)">Removed re-renders</text>
+
+    <rect x="582" y="358" width="184" height="28" rx="6" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+    <text x="596" y="370" fill="#818cf8">🤖 AI TIP</text>
+    <text x="596" y="382" fill="rgba(148,163,184,0.7)">Use useMemo here</text>
+  </g>
+
+  <!-- Score bars -->
+  <rect x="220" y="418" width="556" height="60" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(168,85,247,0.1)" stroke-width="1"/>
+  <text x="240" y="436" font-family="sans-serif" font-size="10" fill="rgba(168,85,247,0.6)">CODE QUALITY BREAKDOWN</text>
+
+  <g font-family="sans-serif" font-size="9" fill="rgba(148,163,184,0.7)">
+    <text x="240" y="452">Readability</text>
+    <rect x="310" y="443" width="160" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <rect x="310" y="443" width="130" height="8" rx="4" fill="url(#scorebar)"/>
+    <text x="478" y="452">82%</text>
+
+    <text x="520" y="452">Performance</text>
+    <rect x="590" y="443" width="160" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <rect x="590" y="443" width="148" height="8" rx="4" fill="url(#scorebar2)"/>
+    <text x="758" y="452">93%</text>
+
+    <text x="240" y="468">Security</text>
+    <rect x="310" y="459" width="160" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <rect x="310" y="459" width="112" height="8" rx="4" fill="url(#scorebar3)"/>
+    <text x="478" y="468">70%</text>
+
+    <text x="520" y="468">Maintainability</text>
+    <rect x="590" y="459" width="160" height="8" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <rect x="590" y="459" width="140" height="8" rx="4" fill="url(#scorebar)"/>
+    <text x="758" y="468">88%</text>
+  </g>
+</svg>

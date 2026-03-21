@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #a855f7;
+  --primary-light: #c084fc;
+  --primary-dim: rgba(168, 85, 247, 0.15);
+  --bg: #000000;
+  --bg-surface: #0a0a0a;
+  --bg-card: #111111;
+}
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+html { scroll-behavior: smooth; color-scheme: dark; }
+
+body {
+  background-color: #000;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 10% 20%, rgba(168,85,247,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 90% 80%, rgba(139,92,246,0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 50% 50%, rgba(168,85,247,0.04) 0%, transparent 70%);
+  color: #e2e8f0;
+  font-family: var(--font-inter), sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #a855f7; border-radius: 2px; }
+
+/* Glass */
+.glass {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+}
+
+/* Cards */
+.glass-card {
+  background: rgba(10, 10, 10, 0.75);
+  border: 1px solid rgba(168, 85, 247, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(168, 85, 247, 0.35);
+  box-shadow: 0 0 0 1px rgba(168,85,247,0.1), 0 8px 40px rgba(168,85,247,0.15), 0 20px 60px rgba(0,0,0,0.5);
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* Project cards — lift hovered, dim others */
+.projects-grid:hover .project-card {
+  opacity: 0.45;
+  transform: translateY(0) scale(0.98);
+}
+.projects-grid:hover .project-card:hover {
+  opacity: 1;
+  transform: translateY(-18px) scale(1.03);
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 20px 60px rgba(168,85,247,0.2), 0 30px 80px rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+/* Universal card grid — lift hovered, dim others */
+.card-grid:hover .card-item {
+  opacity: 0.45;
+  transform: translateY(0) scale(0.97);
+}
+.card-grid:hover .card-item:hover {
+  opacity: 1;
+  transform: translateY(-14px) scale(1.02);
+  border-color: rgba(168, 85, 247, 0.45);
+  box-shadow: 0 16px 50px rgba(168,85,247,0.18), 0 24px 60px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+/* Primary */
+.text-primary { color: #a855f7; }
+.bg-primary { background-color: #a855f7; }
+.border-primary { border-color: #a855f7; }
+
+.gradient-text {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section padding */
+.section-padding { padding: 5rem 1.5rem; }
+@media (min-width: 768px) { .section-padding { padding: 6rem 2rem; } }
+
+/* Lift hover — for any element that should pop up */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(168,85,247,0.12);
+}
+
+/* Auto color cycle for headings */
+@keyframes colorCycle {
+  0%   { color: #a855f7; }
+  20%  { color: #ec4899; }
+  40%  { color: #6366f1; }
+  60%  { color: #22d3ee; }
+  80%  { color: #f59e0b; }
+  100% { color: #a855f7; }
+}
+
+.color-cycle {
+  animation: colorCycle 6s ease-in-out infinite;
+}
+
+/* Typing cursor */
+.typing-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: #a855f7;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* Skill badge */
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  background: rgba(168, 85, 247, 0.07);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+.skill-badge:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: rgba(168, 85, 247, 0.4);
+  color: #c084fc;
+}
+.skill-badge img,
+.skill-badge svg {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.skill-badge:hover img,
+.skill-badge:hover svg {
+  transform: rotate(360deg);
+}
+
+/* Contact icons spin on hover */
+.contact-icon svg {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.glass-card:hover .contact-icon svg {
+  transform: rotate(360deg);
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
+  z-index: 50;
+}
+
+/* Invert icons */
+.icon-invert { filter: invert(1) brightness(200%); }
+
+/* Profile photo — B&W to color on hover */
+.profile-photo-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.profile-photo-wrap img.bw,
+.profile-photo-wrap .bw {
+  filter: grayscale(100%) brightness(0.75);
+  transition: filter 0.6s ease, transform 0.6s ease;
+}
+.profile-photo-wrap:hover img.bw,
+.profile-photo-wrap:hover .bw {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.03);
+}
+
+/* B&W card image reveal on hover */
+.card-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.card-img-wrap img,
+.card-img-wrap span > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(0.5);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+.glass-card:hover .card-img-wrap img,
+.glass-card:hover .card-img-wrap span > img {
+  filter: grayscale(0%) brightness(0.85);
+  transform: scale(1.05);
+}
+
+/* Hide Next.js dev indicator */
+nextjs-portal { display: none; }

@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="appbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#0a1a14"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#be185d"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="line1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="800" height="500" rx="12" fill="#1a1a2e" stroke="#2d2d4e" stroke-width="1.5"/>
+  <rect width="800" height="40" rx="12" fill="#111122"/>
+  <rect y="28" width="800" height="12" fill="#111122"/>
+
+  <!-- Traffic lights -->
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="46" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="68" cy="20" r="7" fill="#28c840"/>
+
+  <!-- URL bar -->
+  <rect x="120" y="10" width="460" height="20" rx="10" fill="#0d0d1e" stroke="#2d2d4e" stroke-width="1"/>
+  <text x="350" y="24" text-anchor="middle" font-family="monospace" font-size="10" fill="#6366f1">databanker.app / dashboard</text>
+
+  <!-- App background -->
+  <rect x="0" y="40" width="800" height="460" fill="url(#appbg)"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="40" width="190" height="460" fill="rgba(5,5,15,0.9)"/>
+  <rect x="189" y="40" width="1" height="460" fill="rgba(168,85,247,0.12)"/>
+
+  <!-- Logo -->
+  <rect x="15" y="55" width="32" height="32" rx="8" fill="rgba(168,85,247,0.2)" stroke="rgba(168,85,247,0.4)" stroke-width="1"/>
+  <text x="31" y="76" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#a855f7">DB</text>
+  <text x="60" y="68" font-family="sans-serif" font-size="13" font-weight="bold" fill="white">DataBanker</text>
+  <text x="60" y="82" font-family="sans-serif" font-size="9" fill="rgba(168,85,247,0.6)">Data Management</text>
+
+  <!-- Nav -->
+  <rect x="10" y="105" width="170" height="30" rx="7" fill="rgba(168,85,247,0.18)" stroke="rgba(168,85,247,0.35)" stroke-width="1"/>
+  <text x="95" y="125" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#c084fc">📊  Dashboard</text>
+
+  <text x="95" y="158" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(148,163,184,0.55)">🗄️  Records</text>
+  <text x="95" y="185" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(148,163,184,0.55)">🔍  Search</text>
+  <text x="95" y="212" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(148,163,184,0.55)">📁  Export</text>
+  <text x="95" y="239" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(148,163,184,0.55)">⚙️  Settings</text>
+
+  <line x1="15" y1="255" x2="175" y2="255" stroke="rgba(168,85,247,0.1)" stroke-width="1"/>
+
+  <text x="20" y="272" font-family="sans-serif" font-size="9" fill="rgba(168,85,247,0.45)">CATEGORIES</text>
+  <text x="20" y="292" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.55)">● Finance</text>
+  <text x="20" y="310" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.55)">● Market Data</text>
+  <text x="20" y="328" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.55)">● User Records</text>
+  <text x="20" y="346" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.55)">● Assets</text>
+  <text x="20" y="364" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.55)">● System Logs</text>
+
+  <!-- Main area header -->
+  <text x="215" y="68" font-family="sans-serif" font-size="17" font-weight="bold" fill="white">Dashboard Overview</text>
+  <text x="215" y="84" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.5)">Welcome back — 52 records managed</text>
+
+  <!-- Search bar -->
+  <rect x="530" y="52" width="240" height="28" rx="14" fill="rgba(0,0,0,0.4)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+  <text x="548" y="70" font-family="sans-serif" font-size="10" fill="rgba(148,163,184,0.35)">🔍  Search records...</text>
+
+  <!-- Stat cards -->
+  <rect x="210" y="98" width="130" height="68" rx="10" fill="rgba(168,85,247,0.07)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+  <text x="275" y="124" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="white">52</text>
+  <text x="275" y="142" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(168,85,247,0.7)">Total Records</text>
+  <text x="275" y="158" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#86efac">↑ +8 this week</text>
+
+  <rect x="352" y="98" width="130" height="68" rx="10" fill="rgba(34,211,238,0.07)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+  <text x="417" y="124" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="white">98%</text>
+  <text x="417" y="142" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(34,211,238,0.7)">Accuracy</text>
+  <text x="417" y="158" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#86efac">↑ Validated</text>
+
+  <rect x="494" y="98" width="130" height="68" rx="10" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="559" y="124" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="white">12ms</text>
+  <text x="559" y="142" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(251,191,36,0.7)">Query Time</text>
+  <text x="559" y="158" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#86efac">↓ Optimized</text>
+
+  <rect x="636" y="98" width="130" height="68" rx="10" fill="rgba(134,239,172,0.07)" stroke="rgba(134,239,172,0.2)" stroke-width="1"/>
+  <text x="701" y="124" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="white">5</text>
+  <text x="701" y="142" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(134,239,172,0.7)">Categories</text>
+  <text x="701" y="158" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#86efac">Structured</text>
+
+  <!-- Bar chart panel -->
+  <rect x="210" y="180" width="310" height="190" rx="10" fill="rgba(0,0,0,0.45)" stroke="rgba(168,85,247,0.12)" stroke-width="1"/>
+  <text x="228" y="200" font-family="sans-serif" font-size="11" font-weight="bold" fill="white">Records by Category</text>
+  <text x="228" y="214" font-family="sans-serif" font-size="9" fill="rgba(148,163,184,0.45)">Monthly breakdown</text>
+
+  <!-- Y axis labels -->
+  <g font-family="monospace" font-size="8" fill="rgba(148,163,184,0.4)">
+    <text x="220" y="232">20</text>
+    <text x="220" y="262">15</text>
+    <text x="220" y="292">10</text>
+    <text x="220" y="322">5</text>
+    <text x="220" y="352">0</text>
+  </g>
+
+  <!-- Grid lines -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="238" y1="228" x2="505" y2="228"/>
+    <line x1="238" y1="258" x2="505" y2="258"/>
+    <line x1="238" y1="288" x2="505" y2="288"/>
+    <line x1="238" y1="318" x2="505" y2="318"/>
+    <line x1="238" y1="348" x2="505" y2="348"/>
+  </g>
+
+  <!-- Bars -->
+  <rect x="252" y="288" width="32" height="60" rx="4" fill="url(#bar1)" opacity="0.9"/>
+  <text x="268" y="362" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(148,163,184,0.6)">Finance</text>
+
+  <rect x="302" y="268" width="32" height="80" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <text x="318" y="362" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(148,163,184,0.6)">Market</text>
+
+  <rect x="352" y="308" width="32" height="40" rx="4" fill="url(#bar3)" opacity="0.9"/>
+  <text x="368" y="362" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(148,163,184,0.6)">Users</text>
+
+  <rect x="402" y="278" width="32" height="70" rx="4" fill="url(#bar1)" opacity="0.9"/>
+  <text x="418" y="362" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(148,163,184,0.6)">Assets</text>
+
+  <rect x="452" y="318" width="32" height="30" rx="4" fill="url(#bar2)" opacity="0.9"/>
+  <text x="468" y="362" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(148,163,184,0.6)">Logs</text>
+
+  <!-- Data table panel -->
+  <rect x="532" y="180" width="240" height="190" rx="10" fill="rgba(0,0,0,0.45)" stroke="rgba(168,85,247,0.12)" stroke-width="1"/>
+  <text x="550" y="200" font-family="sans-serif" font-size="11" font-weight="bold" fill="white">Recent Records</text>
+
+  <!-- Table header -->
+  <rect x="532" y="208" width="240" height="22" fill="rgba(168,85,247,0.08)"/>
+  <g font-family="sans-serif" font-size="9" fill="rgba(168,85,247,0.6)">
+    <text x="545" y="223">ID</text>
+    <text x="575" y="223">Name</text>
+    <text x="680" y="223">Status</text>
+    <text x="735" y="223">Cat.</text>
+  </g>
+
+  <!-- Table rows -->
+  <g font-family="sans-serif" font-size="9">
+    <rect x="532" y="230" width="240" height="22" fill="rgba(255,255,255,0.015)"/>
+    <text x="545" y="245" fill="rgba(148,163,184,0.5)">#001</text>
+    <text x="575" y="245" fill="#e2e8f0">Market Q1</text>
+    <rect x="676" y="233" width="40" height="14" rx="7" fill="rgba(134,239,172,0.15)"/>
+    <text x="696" y="243" text-anchor="middle" fill="#86efac">Active</text>
+    <text x="740" y="245" fill="rgba(168,85,247,0.7)">Fin</text>
+
+    <rect x="532" y="252" width="240" height="22" fill="rgba(255,255,255,0.015)"/>
+    <text x="545" y="267" fill="rgba(148,163,184,0.5)">#002</text>
+    <text x="575" y="267" fill="#e2e8f0">User Analytics</text>
+    <rect x="676" y="255" width="40" height="14" rx="7" fill="rgba(134,239,172,0.15)"/>
+    <text x="696" y="265" text-anchor="middle" fill="#86efac">Active</text>
+    <text x="740" y="267" fill="rgba(168,85,247,0.7)">Usr</text>
+
+    <rect x="532" y="274" width="240" height="22" fill="rgba(255,255,255,0.015)"/>
+    <text x="545" y="289" fill="rgba(148,163,184,0.5)">#003</text>
+    <text x="575" y="289" fill="#e2e8f0">Asset Registry</text>
+    <rect x="673" y="277" width="46" height="14" rx="7" fill="rgba(251,191,36,0.15)"/>
+    <text x="696" y="287" text-anchor="middle" fill="#fbbf24">Pending</text>
+    <text x="740" y="289" fill="rgba(168,85,247,0.7)">Ast</text>
+
+    <rect x="532" y="296" width="240" height="22" fill="rgba(255,255,255,0.015)"/>
+    <text x="545" y="311" fill="rgba(148,163,184,0.5)">#004</text>
+    <text x="575" y="311" fill="#e2e8f0">Sales Report</text>
+    <rect x="676" y="299" width="40" height="14" rx="7" fill="rgba(134,239,172,0.15)"/>
+    <text x="696" y="309" text-anchor="middle" fill="#86efac">Active</text>
+    <text x="740" y="311" fill="rgba(168,85,247,0.7)">Mkt</text>
+
+    <rect x="532" y="318" width="240" height="22" fill="rgba(255,255,255,0.015)"/>
+    <text x="545" y="333" fill="rgba(148,163,184,0.5)">#005</text>
+    <text x="575" y="333" fill="#e2e8f0">System Logs</text>
+    <rect x="676" y="321" width="40" height="14" rx="7" fill="rgba(134,239,172,0.15)"/>
+    <text x="696" y="331" text-anchor="middle" fill="#86efac">Active</text>
+    <text x="740" y="333" fill="rgba(168,85,247,0.7)">Log</text>
+
+    <rect x="532" y="340" width="240" height="22" fill="rgba(255,255,255,0.015)"/>
+    <text x="545" y="355" fill="rgba(148,163,184,0.5)">#006</text>
+    <text x="575" y="355" fill="#e2e8f0">Q2 Forecast</text>
+    <rect x="673" y="343" width="46" height="14" rx="7" fill="rgba(248,113,113,0.15)"/>
+    <text x="696" y="353" text-anchor="middle" fill="#f87171">Archived</text>
+    <text x="740" y="355" fill="rgba(168,85,247,0.7)">Fin</text>
+  </g>
+
+  <!-- Bottom CRUD action bar -->
+  <rect x="210" y="382" width="562" height="50" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(168,85,247,0.1)" stroke-width="1"/>
+  <text x="230" y="400" font-family="sans-serif" font-size="9" fill="rgba(168,85,247,0.5)">QUICK ACTIONS</text>
+
+  <rect x="228" y="406" width="80" height="18" rx="9" fill="rgba(134,239,172,0.12)" stroke="rgba(134,239,172,0.3)" stroke-width="1"/>
+  <text x="268" y="419" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#86efac">+ Add Record</text>
+
+  <rect x="318" y="406" width="70" height="18" rx="9" fill="rgba(168,85,247,0.12)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+  <text x="353" y="419" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#c084fc">✏ Edit</text>
+
+  <rect x="398" y="406" width="70" height="18" rx="9" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.3)" stroke-width="1"/>
+  <text x="433" y="419" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#f87171">🗑 Delete</text>
+
+  <rect x="478" y="406" width="80" height="18" rx="9" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)" stroke-width="1"/>
+  <text x="518" y="419" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#22d3ee">⬇ Export CSV</text>
+
+  <rect x="568" y="406" width="80" height="18" rx="9" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="608" y="419" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fbbf24">🔍 Filter</text>
+
+  <!-- Tech stack badges bottom -->
+  <g font-family="monospace" font-size="9">
+    <rect x="210" y="444" width="50" height="16" rx="8" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+    <text x="235" y="456" text-anchor="middle" fill="#c084fc">HTML</text>
+
+    <rect x="270" y="444" width="78" height="16" rx="8" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+    <text x="309" y="456" text-anchor="middle" fill="#c084fc">Tailwind CSS</text>
+
+    <rect x="358" y="444" width="76" height="16" rx="8" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+    <text x="396" y="456" text-anchor="middle" fill="#c084fc">JavaScript</text>
+
+    <rect x="444" y="444" width="40" height="16" rx="8" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+    <text x="464" y="456" text-anchor="middle" fill="#c084fc">PHP</text>
+  </g>
+</svg>

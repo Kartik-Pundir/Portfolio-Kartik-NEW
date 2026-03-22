@@ -158,6 +158,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, color: "#a855f7" }}
                   className="text-slate-500 hover:text-purple-400 transition-colors"
+                >
                   {s.icon}
                 </motion.a>
               ))}
